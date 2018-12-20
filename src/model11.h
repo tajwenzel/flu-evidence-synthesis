@@ -75,8 +75,8 @@ namespace flu
     void days_to_weeks(double *, double *);
     void days_to_weeks_no_class(double *, double *);
 
-    Eigen::MatrixXd days_to_weeks_5AG(const cases_t &simulation);
-    Eigen::MatrixXd days_to_weeks_5AG(const cases_t &simulation,
+    Eigen::MatrixXd days_to_weeks_11AG(const cases_t &simulation);
+    Eigen::MatrixXd days_to_weeks_11AG(const cases_t &simulation,
         const Eigen::MatrixXd &mapping, size_t no_data);
 
     /// Returns (simplified) log likelihood of one prediction
@@ -90,7 +90,7 @@ namespace flu
             const Eigen::MatrixXd &result_by_week,
             const Eigen::MatrixXi &ili, const Eigen::MatrixXi &mon_pop, 
             const Eigen::MatrixXi &n_pos, const Eigen::MatrixXi &n_samples, 
-            double * pop_5AG_RCGP);
+            double * pop_11AG_RCGP);
  
 
     /// Returns log likelihood of one prediction
